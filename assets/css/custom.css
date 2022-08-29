@@ -1,0 +1,20 @@
+/* Responsive hides for hybrid header */
+@media screen and (min-width: 0px) {
+    .hidebasic {
+        display: none !important;;
+    }
+  
+    .hidehamburger {
+        display: flex !important;;;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hidebasic {
+        display: flex !important;;;
+    }
+  
+    .hidehamburger {
+        display: none !important;
+    }
+  }

@@ -23,35 +23,20 @@ if (document.documentElement.getAttribute("data-auto-appearance") === "true") {
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  const switcher = document.getElementById("appearance-switcher-basic");
-  if (switcher) {
-    switcher.addEventListener("click", () => {
-      document.documentElement.classList.toggle("dark");
-      localStorage.setItem(
-        "appearance",
-        document.documentElement.classList.contains("dark") ? "dark" : "light"
-      );
-    });
-    switcher.addEventListener("contextmenu", (event) => {
-      event.preventDefault();
-      localStorage.removeItem("appearance");
-    });
-  }
-});
-
-window.addEventListener("DOMContentLoaded", (event) => {
-  const switcher = document.getElementById("appearance-switcher-hamburger");
-  if (switcher) {
-    switcher.addEventListener("click", () => {
-      document.documentElement.classList.toggle("dark");
-      localStorage.setItem(
-        "appearance",
-        document.documentElement.classList.contains("dark") ? "dark" : "light"
-      );
-    });
-    switcher.addEventListener("contextmenu", (event) => {
-      event.preventDefault();
-      localStorage.removeItem("appearance");
-    });
-  }
+  const switcher = document.querySelectorAll("#appearance-switcher-hamburger, #appearance-switcher-basic");
+  switcher.forEach((element) => { 
+    if (switcher) {
+      element.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+        localStorage.setItem(
+          "appearance",
+          document.documentElement.classList.contains("dark") ? "dark" : "light"
+        );
+      });
+      element.addEventListener("contextmenu", (event) => {
+        event.preventDefault();
+        localStorage.removeItem("appearance");
+      });
+    }
+  });  
 });

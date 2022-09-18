@@ -3,7 +3,7 @@
 # https://jpanther.github.io/congo/docs/getting-started/
 
 theme = "congo" 
-baseURL = "https://neek05.github.io/"
+baseURL = "https://orlandoflv.github.io/"
 
 googleAnalytics = "G-JENVCDEBJL"
 

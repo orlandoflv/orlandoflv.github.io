@@ -1,11 +1,11 @@
 ---
 title: "My First Post"
 date: 2022-08-28T00:51:35-05:00
-draft: false
+draft: true
 showTableOfContents: true
 categories: ["Test", "Tutorial"]
 tags: ["Hugo", "Congo"]
-layout: "test"
+layout: "simple"
 featured_image: "../4.jpeg"
 ---
 

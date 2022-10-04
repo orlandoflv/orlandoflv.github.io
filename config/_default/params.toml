@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = true
 
-# mainSections = ["section1", "section2"]
+mainSections = ["posts", "proyectos"]
 # robots = ""
 
 [header]
@@ -27,7 +27,7 @@ enableCodeCopy = true
 
 [homepage]
   layout = "page" # valid options: page, profile, custom
-  showRecent = false
+  showRecent = true
 
 [article]
   showDate = true
@@ -36,7 +36,7 @@ enableCodeCopy = true
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = true
-  editURL = "https://github.com/neek05/neek05.github.io/tree/main/content"
+  editURL = "https://github.com/orlandoflv/orlandoflv.github.io/tree/main/content"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true

@@ -1,8 +1,8 @@
-languageCode = "es"
-languageName = "Spanish"
-displayName = ":es:"
-isoCode = "es"
-weight = 1
+languageCode = "en"
+languageName = "English"
+displayName = ":uk:"
+isoCode = "en"
+weight = 2
 rtl = false
 
 title = "orlandoflv.github.io"

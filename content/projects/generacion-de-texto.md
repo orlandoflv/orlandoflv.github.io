@@ -19,7 +19,7 @@ A partir de aquí el relato de la trayectoria para llegar a este resultado, **ac
 
 ## Planteando el proyecto
 
-En mi trayectoria por aprender *recurrent neural networks* (RNN) decidí que uno de los primeros proyectos que trabajaría de forma personal fuese uno de generación de texto a nivel de caracteres, lo cual me ayudaría a comprender mejor su funcionamiento y a poner en práctica lo aprendido. Decidí iniciar el proyecto trabajando a partir textos de Donald Trump, al considerar que habría mucho material disponible, si bien pronto se volvió evidente que no era [precisamente](https://github.com/ZaydH/trump_char_rnn) [la](https://www.csail.mit.edu/news/postdoc-develops-twitterbot-uses-ai-sound-donald-trump) [idea](https://www.csail.mit.edu/news/postdoc-develops-twitterbot-uses-ai-sound-donald-trump) [más](https://towardsdatascience.com/predicting-trump-tweets-with-a-rnn-95e7c398b18e) [novedosa](https://github.com/ppramesi/RoboTrumpDNN).
+En mi trayectoria por aprender *recurrent neural networks* (RNN) decidí que uno de los primeros proyectos que trabajaría de forma personal fuese uno de generación de texto a nivel de caracteres, lo cual me ayudaría a comprender mejor su funcionamiento y a poner en práctica lo aprendido. Decidí iniciar el proyecto trabajando a partir textos de Donald Trump, al considerar que habría mucho material disponible, si bien pronto se volvió evidente que no era [precisamente](https://github.com/ZaydH/trump_char_rnn) [la idea](https://www.csail.mit.edu/news/postdoc-develops-twitterbot-uses-ai-sound-donald-trump) [más](https://towardsdatascience.com/predicting-trump-tweets-with-a-rnn-95e7c398b18e) [novedosa](https://github.com/ppramesi/RoboTrumpDNN).
 
 Para darle un poco más de originalidad y diversidad al asunto, elegí trabajar no a partir de textos escritos por el expresidente en libros o *tweets*, sino a partir de las transcripciones de sus discursos públicos, por lo que podríamos ver este ejercicio como un generador de discursos. 
 
@@ -49,7 +49,7 @@ Si bien se encuentran disponibles en [*Hugging Face*](https://huggingface.co/mod
 
 ## Web scraping
 
-En esta ocasión decidí que la generación de texto en español sería a partir de transcripciones conferencias y discursos del presidente Andrés Manuel López Obrador, y el motivo por el cual seleccionar a este personaje fue similar al anterior: amplia disponibilidad de material en redes. El proceso para obtener las transcripciones partió de hacer *web scraping* desde la página del [presidente](https://lopezobrador.org.mx/transcripciones/) donde se encuentran disponibles estas transcripciones.
+En esta ocasión decidí que la generación de texto en español sería a partir de transcripciones conferencias y discursos del presidente Andrés Manuel López Obrador, y el motivo por el cual seleccionar a este personaje fue similar al anterior: amplia disponibilidad de material en internet. El proceso para obtener las transcripciones partió de hacer *web scraping* desde la página del [presidente](https://lopezobrador.org.mx/transcripciones/) donde se encuentran disponibles estas transcripciones.
 
 Utilizando [Scrapy](https://scrapy.org/) obtuve 1609 transcripciones de conferencias de prensa y discursos en eventos públicos del 4 de diciembre de 2018 al 21 de julio de 2022. Una vez realizada la limpieza de las transcripciones y manteniendo únicamente las participaciones del presidente López Obrador y eliminando las participaciones de cualquier otro personaje, esto se tradujo en 38 MB de discursos y conferencias transcritas, equivalente a 36,795,294 caracteres.
 
@@ -58,7 +58,7 @@ Para poder entrenar el modelo y debido a las limitaciones de hardware tuve que h
 
 Otra limitación adicional, fue que al momento de programar la aplicación utilizando *Gradio* y al subirla a [*Hugging Spaces*](https://huggingface.co/spaces), por cuestión del tiempo requerido para generar el texto, vi necesario limitar la generación a solo 100 palabras.
 
-El resultado del *fine tuning* tras un entramiento de 5 *epochs*, es la generación de un texto decente, como se puede ver al inicio, que a diferencia de los primeros ejercicios, mantiene al menos una coherencia y estructura dentro de las oraciones generadas. Considero que aún hay margen de mejora y afortunadamente la *API* de *transformers* tiene la suficiente flexibilidad para ir ajustando distintos parámetros tanto en el entrenamiento como en la generación de texto. Espero subir próximamente un tutorial detallado sobre los pasos seguidos en este proyecto.
+El resultado del *fine tuning* tras un entrenamiento de 5 *epochs*, es la generación de un texto decente, como se puede ver al inicio, que a diferencia de los primeros ejercicios, mantiene al menos una coherencia y estructura dentro de las oraciones generadas. Considero que aún hay margen de mejora y afortunadamente la *API* de *transformers* tiene la suficiente flexibilidad para ir ajustando distintos parámetros tanto en el entrenamiento como en la generación de texto. Espero subir próximamente un tutorial detallado sobre los pasos seguidos en este proyecto.
 
 <script type="module"
 src="https://gradio.s3-us-west-2.amazonaws.com/3.1.7/gradio.js">

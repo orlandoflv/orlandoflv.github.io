@@ -20,7 +20,7 @@ From here on, the story of the path to reach this result, **clarifying that the 
 
 ### Setting up the project
 
-In my journey to learn *recurrent neural networks* (RNN) I decided that one of the first projects I would work on personally would be one of character-level text generation, which would help me to better understand how it works and to put into practice what I had learned. I decided to start the project by working from Donald Trump's texts, considering that there would be a lot of material available, although it soon became evident that it was not [exactly](https://github.com/ZaydH/trump_char_rnn) [the most](https://www.csail.mit.edu/news/postdoc-develops-twitterbot-uses-ai-sound-donald-trump) [innovative](https://towardsdatascience.com/predicting-trump-tweets-with-a-rnn-95e7c398b18e)[idea](https://github.com/ppramesi/RoboTrumpDNN).
+In my journey to learn *recurrent neural networks* (RNN) I decided that one of the first projects I would work on personally would be one of character-level text generation, which would help me to better understand how it works and to put into practice what I had learned. I decided to start the project by working from Donald Trump's texts, considering that there would be a lot of material available, although it soon became evident that it was not [exactly](https://github.com/ZaydH/trump_char_rnn) [the most](https://www.csail.mit.edu/news/postdoc-develops-twitterbot-uses-ai-sound-donald-trump) [innovative](https://towardsdatascience.com/predicting-trump-tweets-with-a-rnn-95e7c398b18e) [idea](https://github.com/ppramesi/RoboTrumpDNN).
 
 To give a little more originality and diversity to the subject, I chose to work not from texts written by the former president in books or *tweets*, but from the transcripts of his public speeches, so we could see this exercise as a speech generator. 
 
@@ -62,5 +62,5 @@ Another additional limitation was that when programming the application using *G
 The result of the *fine tuning* after a training of 5 *epochs*, is the generation of a decent text, as you can see at the beginning, which unlike the first exercises, maintains at least a coherence and structure within the generated sentences. I consider that there's still room for improvement and fortunately the *transformers* *API* has enough flexibility to adjust different parameters both in the training and in the text generation. I hope to upload soon a detailed tutorial about the steps followed in this project.
 
 <script type="module"
-src="https://gradio.s3-us-west-2.amazonaws.com/3.1.7/gradio.js">
+src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js">
 </script>

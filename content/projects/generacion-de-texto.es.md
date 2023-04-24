@@ -61,5 +61,5 @@ Otra limitación adicional, fue que al momento de programar la aplicación utili
 El resultado del *fine tuning* tras un entrenamiento de 5 *epochs*, es la generación de un texto decente, como se puede ver al inicio, que a diferencia de los primeros ejercicios, mantiene al menos una coherencia y estructura dentro de las oraciones generadas. Considero que aún hay margen de mejora y afortunadamente la *API* de *transformers* tiene la suficiente flexibilidad para ir ajustando distintos parámetros tanto en el entrenamiento como en la generación de texto. Espero subir próximamente un tutorial detallado sobre los pasos seguidos en este proyecto.
 
 <script type="module"
-src="https://gradio.s3-us-west-2.amazonaws.com/3.1.7/gradio.js">
+src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js">
 </script>

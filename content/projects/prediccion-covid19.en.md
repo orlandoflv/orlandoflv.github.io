@@ -33,5 +33,5 @@ For example, the chance that a 68-year-old man, in Mexico City, in the municipal
 The result changes radically if we consider the case of a woman of the same age and in the same locality, but who died in the first half of April. In this case, the probability that the cause of death was COVID-19 decreases to 39%. Playing a little more with the conditions of death, very interesting patterns can be found in different regions of the country depending on the selected temporality and demographic conditions. 
 
 <script type="module"
-src="https://gradio.s3-us-west-2.amazonaws.com/3.3/gradio.js">
+src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js">
 </script>

@@ -32,5 +32,5 @@ Por ejemplo, la posibilidad de que un hombre de 68 años, en la Ciudad de Méxic
 El resultado cambia radicalmente si consideramos el caso de una mujer de esa misma edad y en esa misma localidad, pero fallecida en la primera quincena de abril. En este caso la probabilidad de que la causa de fallecimiento haya sido COVID-19 disminuye a 39%. Jugando un poco más con las  condiciones de deceso, se podrán encontrar patrones muy interesantes en distintas regiones del país en función de la temporalidad seleccionada  y las condiciones demográficas. 
 
 <script type="module"
-src="https://gradio.s3-us-west-2.amazonaws.com/3.3/gradio.js">
+src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js">
 </script>

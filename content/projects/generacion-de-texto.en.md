@@ -63,5 +63,5 @@ The result of the *fine tuning* after a training of 5 *epochs*, is the generatio
 
 <script
 	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/gradio.js"
 ></script>

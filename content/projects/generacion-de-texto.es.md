@@ -62,5 +62,5 @@ El resultado del *fine tuning* tras un entrenamiento de 5 *epochs*, es la genera
 
 <script
 	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/gradio.js"
 ></script>

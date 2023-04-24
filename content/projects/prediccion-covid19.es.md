@@ -33,5 +33,5 @@ El resultado cambia radicalmente si consideramos el caso de una mujer de esa mis
 
 <script
 	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/gradio.js"
 ></script>

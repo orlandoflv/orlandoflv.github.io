@@ -2,7 +2,7 @@ languageCode = "es"
 languageName = "Spanish"
 displayName = ":es:"
 isoCode = "es"
-weight = 1
+weight = 2
 rtl = false
 
 title = "orlandoflv.github.io"

@@ -14,7 +14,7 @@
 #  name = "Blog"
 #  pageRef = "posts"
 #  weight = 5
-
+    
 [[main]]
   name = "Projects"
   pageRef = "projects"
@@ -30,6 +30,18 @@
   pageRef = "tags"
   weight = 30
 
+[[main]]
+  identifier = "search"
+  weight = 40
+  [main.params]
+    action = "search"
+    icon = "search"
+
+[[main]]
+  identifier = "appearance"
+  weight = 50
+  [main.params]
+    action = "appearance"
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

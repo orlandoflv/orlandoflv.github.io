@@ -16,7 +16,7 @@ mainSections = ["posts", "projects"]
 # robots = ""
 
 [header]
-  layout = "custom" # valid options: basic, hamburger, hybrid, custom
+  layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
   showAppearanceSwitcher = true
 
 [footer]

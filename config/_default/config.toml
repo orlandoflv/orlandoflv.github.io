@@ -7,7 +7,7 @@ baseURL = "https://orlandoflv.github.io/"
 
 googleAnalytics = "G-JENVCDEBJL"
 
-defaultContentLanguage = "es"
+defaultContentLanguage = "en"
 
 enableRobotsTXT = true
 paginate = 5

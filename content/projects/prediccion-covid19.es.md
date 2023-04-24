@@ -15,7 +15,7 @@ La pandemia de COVID-19 ha tenido consecuencias graves en todo el mundo y en Mé
 
 Para tratar de dar contexto a la situación que se vivió en el país durante ese año generé un modelo, a partir de esta base de datos, que pudiese predecir, en función de la edad, género, lugar de fallecimiento, escolaridad, fecha de fallecimiento, entre otras variables, cuáles fueron las probabilidades de que la causa de defunción de las personas se hubiese registrado como COVID-19.
 
-<gradio-app space="neek05/Defunciones2020"></gradio-app> 
+<gradio-app src="https://neek05-defunciones2020.hf.space"></gradio-app>
 
 Este modelo fue desarrollado con un algoritmo de *gradient boosting*, utilizando la librería de [Catboost](https://catboost.ai/), logrando obtener un *F1 Score* de .80 después de realizar varios ajustes. Tomando en cuenta los cambios en la mortalidad por COVID-19 que se han presentado en años posteriores como consecuencia de los esfuerzos de vacunación llevados a cabo a nivel mundial, no es un modelo que pueda extrapolarse a años posteriores. En este sentido es más un ejercicio para poner en práctica conocimientos aprendidos en *machine learning* que un modelo predictivo e incluso, si se analiza detalladamente la base de datos puesta a [disposición](http://www.dgis.salud.gob.mx/contenidos/basesdedatos/da_defunciones_gobmx.html) por la Secretaria de Salud se pueden encontrar y analizar resultados más detallados.
 
@@ -31,6 +31,7 @@ Por ejemplo, la posibilidad de que un hombre de 68 años, en la Ciudad de Méxic
 
 El resultado cambia radicalmente si consideramos el caso de una mujer de esa misma edad y en esa misma localidad, pero fallecida en la primera quincena de abril. En este caso la probabilidad de que la causa de fallecimiento haya sido COVID-19 disminuye a 39%. Jugando un poco más con las  condiciones de deceso, se podrán encontrar patrones muy interesantes en distintas regiones del país en función de la temporalidad seleccionada  y las condiciones demográficas. 
 
-<script type="module"
-src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js">
-</script>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js"
+></script>

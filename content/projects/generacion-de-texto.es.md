@@ -13,7 +13,7 @@ summary: "Sobre la trayectoria seguida para lograr generar texto en español."
 ## Generación de texto en español
 Quiero empezar este texto mostrando inmediatamente el resultado del primer proyecto que realicé en *machine learning*: un generador de texto en español a partir de hacer *fine-tuning* a un modelo existente (*BLOOM*) usando *Transformers*. El entrenamiento se realizó a partir de las transcripciones de las conferencias de prensa y discursos públicos del presidente de México, Andrés Manuel López Obrador, por lo que el texto generado se caracteriza por replicar su particular manera de comunicarse de forma verbal.
 
-<gradio-app space="neek05/NLP-AMLO"></gradio-app> 
+<gradio-app src="https://neek05-nlp-amlo.hf.space"></gradio-app>
 
 A partir de aquí el relato de la trayectoria para llegar a este resultado, **aclarando que el texto no pretende ser un tutorial ni explicar los detalles específicos para la creación de esta app.**
 
@@ -60,6 +60,7 @@ Otra limitación adicional, fue que al momento de programar la aplicación utili
 
 El resultado del *fine tuning* tras un entrenamiento de 5 *epochs*, es la generación de un texto decente, como se puede ver al inicio, que a diferencia de los primeros ejercicios, mantiene al menos una coherencia y estructura dentro de las oraciones generadas. Considero que aún hay margen de mejora y afortunadamente la *API* de *transformers* tiene la suficiente flexibilidad para ir ajustando distintos parámetros tanto en el entrenamiento como en la generación de texto. Espero subir próximamente un tutorial detallado sobre los pasos seguidos en este proyecto.
 
-<script type="module"
-src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js">
-</script>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js"
+></script>

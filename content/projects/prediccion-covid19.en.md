@@ -16,7 +16,7 @@ The COVID-19 pandemic has had serious consequences throughout the world and Mexi
 
 To try to give context to the situation experienced in the country during that year, I generated a model from this database that could predict, based on age, gender, place of death, education, date of death, among other variables, what were the probabilities that the cause of death of individuals would have been registered as COVID-19.
 
-<gradio-app space="neek05/Defunciones2020"></gradio-app> 
+<gradio-app src="https://neek05-defunciones2020.hf.space"></gradio-app>
 
 This model was developed with a *gradient boosting* algorithm, using the [Catboost library](https://catboost.ai/), obtaining an *F1 Score* of .80 after making several adjustments. Taking into account the changes in COVID-19 mortality that have occurred in later years as a consequence of the vaccination efforts carried out worldwide, this is not a model that can be extrapolated to later years. In this sense, it is more an exercise to put into practice knowledge learned in *machine learning* than a predictive model, and even more detailed results can be found and analyzed if the database made [available](http://www.dgis.salud.gob.mx/contenidos/basesdedatos/da_defunciones_gobmx.html) by the Ministry of Health is analyzed in detail.
 
@@ -32,6 +32,7 @@ For example, the chance that a 68-year-old man, in Mexico City, in the municipal
 
 The result changes radically if we consider the case of a woman of the same age and in the same locality, but who died in the first half of April. In this case, the probability that the cause of death was COVID-19 decreases to 39%. Playing a little more with the conditions of death, very interesting patterns can be found in different regions of the country depending on the selected temporality and demographic conditions. 
 
-<script type="module"
-src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js">
-</script>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js"
+></script>

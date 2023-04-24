@@ -14,9 +14,9 @@ slug: "text-generation"
 ## Spanish text generation
 I want to start this text by immediately showing the result of the first project I did in *machine learning*: a Spanish text generator from *fine-tuning* an existing model (*BLOOM*) using *Transformers*. The training was carried out from the transcripts of the press conferences and public speeches of the president of Mexico, Andrés Manuel López Obrador, so the generated text is characterized by replicating his particular way of communicating verbally.
 
-<gradio-app space="neek05/NLP-AMLO"></gradio-app> 
+<gradio-app src="https://neek05-nlp-amlo.hf.space"></gradio-app>
 
-From here on, the story of the path to reach this result, **clarifying that the text is not intended to be a tutorial or to explain the specific details for the creation of this app.**.
+From here on, the story of the path to reach this result, **clarifying that the text is not intended to be a tutorial or to explain the specific details for the creation of this app.**
 
 ### Setting up the project
 
@@ -61,6 +61,7 @@ Another additional limitation was that when programming the application using *G
 
 The result of the *fine tuning* after a training of 5 *epochs*, is the generation of a decent text, as you can see at the beginning, which unlike the first exercises, maintains at least a coherence and structure within the generated sentences. I consider that there's still room for improvement and fortunately the *transformers* *API* has enough flexibility to adjust different parameters both in the training and in the text generation. I hope to upload soon a detailed tutorial about the steps followed in this project.
 
-<script type="module"
-src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js">
-</script>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.27/gradio.js"
+></script>
